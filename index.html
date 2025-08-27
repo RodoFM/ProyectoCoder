@@ -16,23 +16,21 @@
 </head>
 
 <body>
-    <header class="sticky-top">
-        <nav class="navbar  navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand h-100" href="#">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/lgo cat.png" alt="logo" height="40">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
-                    aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar-star">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item active">
-                            <img class="h-auto d-inline-block nav-link" href="./index.html" src="./images/lgo cat.png "
-                                alt="logo" width="80px">
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><strong>Inicio</strong></a>
+                            <a class="nav-link active" href="#"><strong>Inicio</strong></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/experiencia.html"><strong>Experiencia</strong></a>
@@ -44,20 +42,29 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main class="presentacion">
         <div class="intro">
             <div class="row featurette">
                 <div class="col-md-7 d-flex align-content-center flex-wrap">
-                    <h2 class="featurette-heading d-flex align-self-center">Sobre mi:</h2>
-                    <p class="text-center lh-base fw-bolder">Mi nombre es Rodolfo Fernández Muñoz y actualmente soy un
-                        desarrollador web en  formación. Naci en la ciudad de Santiago en 1990. Actualmente resido en la ciudad de Los Ángeles, mi vida interior se caracteriza por emociones complejas, una imaginación vivida y un profundo pozo de empatía que me permite conectar con los demás a un nivel profundo. Tengo un compromiso inquebrantable con mis principios y un intenso deseo de tener un impacto positivo en el mundo  quienes me rodean. Vivo con mi hermano y mi pequeña gata, me gustan las conversaciones profundas y genuinas te hacen sentir vivo, en mi tiempo a solas sueño despierto, escribo o explorar mis pensamientos.También me gusta sumergirme en la tranquilidad de belleza de lugares naturales que restauran mi energía e inspiran a mi creatividad, gusto de explorar a fondo temas que despierten mi interés nutre mi curiosidad intelectual y crecimiento personal.
+                    <h2 class="titulo featurette-heading d-flex">Sobre mi:</h2>
+                    <p class=" texto1 text-center lh-base">Mi nombre es Rodolfo Fernández Muñoz y actualmente soy un
+                        desarrollador web en formación. Naci en la ciudad de Santiago en 1990. Actualmente resido en la
+                        ciudad de Los Ángeles, mi vida interior se caracteriza por emociones complejas, una imaginación
+                        vivida y un profundo pozo de empatía que me permite conectar con los demás a un nivel profundo.
+                        Tengo un compromiso inquebrantable con mis principios y un intenso deseo de tener un impacto
+                        positivo en el mundo quienes me rodean. Vivo con mi hermano y mi pequeña gata, me gustan las
+                        conversaciones profundas y genuinas te hacen sentir vivo, en mi tiempo a solas sueño despierto,
+                        escribo o explorar mis pensamientos.También me gusta sumergirme en la tranquilidad de belleza de
+                        lugares naturales que restauran mi energía e inspiran a mi creatividad, gusto de explorar a
+                        fondo temas que despierten mi interés nutre mi curiosidad intelectual y crecimiento personal.
                     </p>
                 </div>
 
                 <div class="col-md-5">
-                    <img src="./images/yo en baranda.jpg" class="img-fluid" alt="Foto de Rodolfo Fernández"
+                    <img src="./images/yo en baranda.jpg" class="yo1 img-fluid" alt="Foto de Rodolfo Fernández"
                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-circle"
                         height="400" preserveAspectRatio="xMidYMid slice" role="img" width="400"
                         xmlns="http://www.w3.org/2000/svg">
@@ -84,72 +91,71 @@
                 <!-- Mencion de algunos hobbies y sus pros -->
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
-                            xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
-                            focusable="false" src="./images/meditacion gif.gif" alt="Persona Meditando">
+                        <img class="hobby bd-placeholder-img rounded-circle" width="140" height="140"
+                             src="./images/meditacion gif.gif" alt="Persona Meditando">
 
-                        <h2>Meditar</h2>
+                        <h2 class="subhobby">Meditar</h2>
                         <p>Manejo del estrés laboral, concentración sostenida, toma de decisiones serenas,
                             inteligencia
                             emocional.</p>
 
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="200"
+                        <img class="hobby bd-placeholder-img rounded-circle" width="140" height="200"
                             xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
                             focusable="false" src="./images/trekking gif.gif" alt="Persona haciendo Trekking">
 
-                        <h2>Trekking</h2>
+                        <h2 class="subhobby">Trekking</h2>
                         <p>Trabajo en equipo en entornos exigentes, planificación de rutas/proyectos, resiliencia
                             física y
                             mental, observación de detalles</p>
 
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
+                        <img class="hobby bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
                             xmlns="http://www.w3.org/2000/svg" role="img" src="./images/futbol gif.gif"
                             alt="balón de fútbol">
 
-                        <h2>Jugar fútbol</h2>
+                        <h2 class="subhobby">Jugar fútbol</h2>
                         <p>Colaboración efectiva, comunicación rápida y clara, liderazgo en terreno, gestión de
                             conflictos.
                         </p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
+                        <img class="hobby bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
                             xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
                             focusable="false" src="./images/futbol americano gif.gif" alt="jugador de fútbol americano">
 
-                        <h2>Fútbol americano</h2>
+                        <h2 class="subhobby">Fútbol americano</h2>
                         <p>Trabajo bajo presión, estrategia avanzada, liderazgo y motivación, fortaleza mental..</p>
 
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
+                        <img class="hobby bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
                             xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
                             focusable="false" src="./images/judo gif.gif" alt="Logo Federación de judo">
 
-                        <h2>Judo</h2>
+                        <h2 class="subhobby">Judo</h2>
                         <p>Autodisciplina, autocontrol en situaciones tensas, respeto por jerarquías y reglas,
                             resolución
                             de conflictos sin violencia.</p>
 
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
+                        <img class="hobby bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
                             xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
                             focusable="false" src="./images/libro gif.gif" alt="Libro">
 
-                        <h2>Leer</h2>
+                        <h2 class="subhobby">Leer</h2>
                         <p>Análisis de información, aprendizaje autónomo, redacción clara, síntesis de datos.</p>
 
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
+                        <img class="hobby bd-placeholder-img rounded-circle img-fluid" width="140" height="140"
                             xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"
                             focusable="false" src="./images/moto gif.gif" alt="Motocicleta"><br><br>
 
-                        <h2>Andar en moto</h2>
+                        <h2 class="subhobby">Andar en moto</h2>
                         <p>Gestión de riesgos, cumplimiento de normas, orientación espacial, disciplina en
                             seguridad.</p>
 
