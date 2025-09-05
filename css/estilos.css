@@ -1,0 +1,167 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: red solid;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*header*/
+body header {
+  background-color: #2c9b88;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body header nav {
+  width: 100vw;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/*index*/
+.presentacion {
+  background-image: url(../images/pexels-eberhardgross-2088149.jpg);
+  background-size: cover;
+  color: rgb(2, 1, 0);
+  padding-left: 50px;
+  font-weight: bold;
+}
+.presentacion .intro {
+  padding-top: 100px;
+}
+.presentacion .intro .titulo {
+  margin-bottom: 30px;
+  align-self: center;
+}
+.presentacion .intro .titulo .texto1 {
+  font-weight: bold;
+}
+.presentacion .intro .col-md-5 .yo1 {
+  border-radius: 91px 91px 91px 91px;
+}
+.presentacion .cuerpo {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.presentacion .cuerpo .col-lg-4 {
+  display: grid;
+  justify-content: center;
+  color: rgb(2, 1, 0);
+  justify-items: center;
+  align-items: center;
+}
+.presentacion .cuerpo .col-lg-4 .hobby {
+  object-fit: auto;
+  height: 140px;
+  margin-top: 10px;
+  align-self: center;
+}
+.presentacion .cuerpo .col-lg-4 .subhobby {
+  margin-top: 10px;
+  align-self: center;
+}
+
+/*experiencia*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.5 1fr 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr 1fr;
+  gap: 0px;
+  background-image: url(../images/pexels-eberhardgross-2310713.jpg);
+  justify-items: center;
+  align-items: center;
+  background-size: cover;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 65px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.parent .div1 {
+  grid-row: span 1/span 2;
+}
+.parent .div1 img {
+  border-radius: 94px;
+  height: 140px;
+  margin-top: 10px;
+  align-self: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.parent .div1 img #yo {
+  width: 80%;
+  height: 80%;
+  border-radius: 55px 2px 51px 0px;
+}
+
+/*contacto*/
+.CuerpoContacto {
+  background-image: url(../images/pexels-omergulen-19887101.jpg);
+  background-size: cover;
+}
+.CuerpoContacto .invitacion {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(10, 6, 0);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 100px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(10, 6, 0);
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.contacto .boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+/*Media Queries*/
+/* RESPONSIVE-------------------------------------------------------------- */
+/* Media query */
+/* mobile */
+@media (max-width: 576) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-items: center;
+    align-items: center;
+    background-size: cover;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .div6 {
+    display: none;
+  }
+  .div8 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

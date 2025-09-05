@@ -1,0 +1,25 @@
+//reponsive
+/* RESPONSIVE-------------------------------------------------------------- */
+/* Media query */
+/* mobile */
+@media(max-width:576) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-items: center;
+        align-items: center;
+        background-size: cover;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .div6 {
+        display: none;
+    }
+
+    .div8 {
+        display: none;
+    }
+
+}
