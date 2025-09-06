@@ -2,19 +2,36 @@
 /* RESPONSIVE-------------------------------------------------------------- */
 /* Media query */
 /* mobile */
-@media(max-width:576) {
+
+
+@media (max-width: 600px) {
     .parent {
         display: flex;
         flex-direction: column;
-        gap: 0px;
-        justify-items: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
         align-items: center;
-        background-size: cover;
-        font-size: 1rem;
-        font-weight: 300;
+        justify-items: center;
+    }
+     #yo {
+        width: 50%;
+        height: 50%;
+        border-radius: 55px 2px 51px 0px;
+        justify-self: center;
+        margin-bottom: 20px;
+        grid-column: 1;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
     }
 
-    .div6 {
+    .div2 {
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        width: 500px;
+    }
+     .div6 {
         display: none;
     }
 
@@ -23,3 +40,4 @@
     }
 
 }
+

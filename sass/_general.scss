@@ -10,6 +10,21 @@
 
 //Varaibles
 $negro: rgb(2, 1, 0);
+$contorno: 94px;
+
+//mixin
+@mixin negrita{
+    font-size: 16px;
+    font-weight: bold;
+    color: $negro;
+}
+
+@mixin posicion{
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
 
 //header
 /*header*/

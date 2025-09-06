@@ -1,41 +1,30 @@
+@use "./general" as*;
+@use "./MediaQ" as*;
+
+
 .CuerpoContacto {
   background-image: url(../images/pexels-omergulen-19887101.jpg);
   background-size: cover;
   .invitacion {
   display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  font-weight: bold;
-  color: rgb(10, 6, 0);
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  @include posicion;
+  @include negrita;
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 100px;
-
-
 }
 }
 
 
 .contacto {
   display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  font-weight: bold;
-  color: rgb(10, 6, 0);
+  @include posicion;
+  @include negrita;
   padding: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
   margin-top: 100px;
   .boton {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  @include posicion;
   margin-left: 5px;
 }
 }

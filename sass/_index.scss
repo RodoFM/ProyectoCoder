@@ -1,3 +1,6 @@
+@use "./general" as*;
+@use "./MediaQ" as*;
+
 .presentacion {
     background-image: url(../images/pexels-eberhardgross-2088149.jpg);
     background-size: cover;
