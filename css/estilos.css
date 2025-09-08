@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: red solid;
+  border: none;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -199,23 +199,20 @@ body header nav {
     font-size: 12px;
     font-weight: bold;
   }
+  /*Contacto*/
+  .CuerpoContacto #invitacion1 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .invitacion p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .contacto h2 {
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
-/*Contacto*/
-.CuerpoContacto #invitacion1 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.invitacion p {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.contacto h2 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
 .presentacion {
   background-image: url(../images/pexels-eberhardgross-2088149.jpg);
   background-size: cover;

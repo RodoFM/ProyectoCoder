@@ -93,10 +93,11 @@
         padding: 5px;
         display: grid;
         grid-template-columns: 5% 80 5%;
-        grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr  1fr;
+        grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr;
         justify-content: center;
         align-items: center;
-        margin: 5px;;
+        margin: 5px;
+        ;
 
         .div1 {
             display: none;
@@ -216,29 +217,23 @@
         }
     }
 
+    /*Contacto*/
+    .CuerpoContacto {
+        #invitacion1 {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
 
-
-}
-
-
-
-
-
-/*Contacto*/
-.CuerpoContacto {
-    #invitacion1 {
-        font-size: 15px;
+    .invitacion p {
+        font-size: 12px;
         font-weight: bold;
     }
-}
 
-.invitacion p {
-    font-size: 12px;
-    font-weight: bold;
-}
+    .contacto h2 {
+        font-size: 15px;
+        font-weight: bold;
 
-.contacto h2 {
-    font-size: 15px;
-    font-weight: bold;
+    }
 
 }
