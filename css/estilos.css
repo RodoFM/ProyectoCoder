@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: none;
+  border: red solid;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -36,12 +36,13 @@ body header nav {
   }
   /*presentacion*/
   .parent {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
+    display: block;
+    grid-template-rows: none;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    max-width: 100%;
+    align-items: start;
   }
   .parent .div3,
   .parent .div5,
@@ -64,6 +65,10 @@ body header nav {
   .parent .div18 {
     font-size: 15px;
     font-weight: bolder;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    display: grid;
   }
   /*Contacto*/
   .CuerpoContacto #invitacion1 {
@@ -100,9 +105,10 @@ body header nav {
     grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr;
     justify-content: center;
     align-items: center;
-    margin: 5px;
   }
-  .parent .div1 {
+  .parent .div1,
+  .parent .div6,
+  .parent .div8 {
     display: none;
   }
   .parent .div2 {
@@ -110,7 +116,6 @@ body header nav {
     grid-row: 1/2;
     justify-content: center;
     width: 100%;
-    padding-left: 50px;
   }
   .parent .div3 {
     grid-column: 2/3;
@@ -130,7 +135,7 @@ body header nav {
     grid-row: 5/6;
   }
   .parent .div7 {
-    grid-column: 2/4;
+    grid-column: 1/4;
     grid-row: 5/6;
   }
   .parent .div8 {
@@ -138,7 +143,7 @@ body header nav {
     grid-row: 6/7;
   }
   .parent .div9 {
-    grid-column: 2/4;
+    grid-column: 1/4;
     grid-row: 6/7;
   }
   .parent .div10 {
@@ -217,7 +222,7 @@ body header nav {
   background-image: url(../images/pexels-eberhardgross-2088149.jpg);
   background-size: cover;
   color: rgb(2, 1, 0);
-  padding-left: 50px;
+  padding: 0px 5px;
   font-weight: bold;
 }
 .presentacion .intro {
@@ -304,8 +309,10 @@ body header nav {
   font-size: 16px;
   font-weight: bold;
   color: rgb(2, 1, 0);
-  padding-left: 100px;
-  padding-right: 100px;
+}
+.div2 p {
+  width: auto;
+  text-align: center;
 }
 
 .div3 {
@@ -317,40 +324,40 @@ body header nav {
 }
 
 .text-pop-up-top {
-  -webkit-animation: text-pop-up-top 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  animation: text-pop-up-top 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  -webkit-animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
 @-webkit-keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+    -webkit-transform-origin: 20% 20%;
+    transform-origin: 20% 20%;
     text-shadow: none;
   }
   100% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transform-origin: 20% 20%;
+    transform-origin: 20% 20%;
+    text-shadow: 0 1px 0 #56667a, 0 2px 0 #362769, 0 3px 0 #3a227c, 0 4px 0 #3364a3, 0 5px 0 #297abd, 0 6px 0 #3d879e, 0 7px 0 #268ead, 0 8px 0 #118bc4, 0 9px 0 #13a5aa, 0 50px 30px rgba(27, 177, 214, 0.3);
   }
 }
 @keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+    -webkit-transform-origin: 20% 20%;
+    transform-origin: 20% 20%;
     text-shadow: none;
   }
   100% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transform-origin: 20% 20%;
+    transform-origin: 20% 20%;
+    text-shadow: 0 1px 0 #56667a, 0 2px 0 #362769, 0 3px 0 #3a227c, 0 4px 0 #3364a3, 0 5px 0 #297abd, 0 6px 0 #3d879e, 0 7px 0 #268ead, 0 8px 0 #118bc4, 0 9px 0 #13a5aa, 0 50px 30px rgba(27, 177, 214, 0.3);
   }
 }
 .div4 {
@@ -360,6 +367,9 @@ body header nav {
   font-weight: bold;
   color: rgb(2, 1, 0);
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .div5 {
